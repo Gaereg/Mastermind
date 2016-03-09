@@ -1,0 +1,170 @@
+body{
+	background-color: black;
+	color: white;
+}
+
+#bc1, #bc2, #bc3, #bc4, #bc5, #bc6, #bc7, #bc8{
+	color: red;
+}
+
+#bp1, #bp2, #bp3, #bp4, #bp5, #bp6, #bp7, #bp8{
+	color: white;
+}
+
+.case{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 5px 0 5px 0;
+}
+
+.essai, .reponse{
+	border : 1px solid white;
+}
+
+main{
+	width: 226px;
+	margin: auto;
+}
+
+.ligne-reponse, .ligne-tentative1, .ligne-tentative2, .ligne-tentative3, .ligne-tentative4, .ligne-tentative5, .ligne-tentative6, .ligne-tentative7, .ligne-tentative8, .ligne-essai, .choix-couleur{
+	display: flex;
+	justify-content: space-between;
+	height: 35px;
+}
+
+.ligne-reponse, .ligne-essai, .choix-couleur{
+	width: 200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ligne-case{
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ligne-essai{
+	border-top: 2px solid white;
+}
+
+.ligne-reponse{
+	padding-bottom: 5px;
+	border-bottom: 2px solid white;
+}
+
+.bloc-tentative{
+	height: 280px;
+	margin-left: 13px;
+	font-size: 80%;
+}
+
+.aide{
+	border-top: 1px grey solid;
+}
+
+.couleur{
+	width: 15px;
+	height: 15px;
+}
+
+.rouge{
+	background-color: red;
+}
+
+.jaune{
+	background-color: yellow;
+}
+
+.vert{
+	background-color: green;
+}
+
+.bleu{
+	background-color: blue;
+}
+
+.orange{
+	background-color: #D48600;
+}
+
+.violet{
+	background-color: violet;
+}
+
+.marron{
+	background-color: #8F5953;
+}
+
+.blanc{
+	background-color: white;
+}
+
+.noir{
+	background-color: black;
+}
+
+.bouton{
+	display: flex;
+	justify-content: center;
+}
+
+.ok{
+	display: block;
+	margin-top: 10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+	box-shadow: none;
+	margin-right: 5px;
+}
+
+.supp{
+	display: block;
+	margin-top: 10px;
+	width: 60px;
+	height: 30px;
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+	box-shadow: none;
+}
+
+#fin{
+	width: 226px;
+	height: 80px;
+	position: absolute;
+	top: 130px;
+	visibility: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#reset{
+	width: 130px;
+	height: 30px;
+	display: block;
+	margin: auto;
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+	box-shadow: none;
+}
+
+header, footer{
+	width: 500px;
+	margin: auto;
+	text-align: justify;
+	margin-bottom: 50px;
+}
+
+h1, h2{
+	text-align: center;
+}

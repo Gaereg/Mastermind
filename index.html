@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<!--Meta-->
+		<meta charset ="UTF-8">
+		<meta name    ="author" content="">
+		<meta name    ="description" content="">
+		<!--link externe-->
+
+		<!-- Font -->
+
+		<!--link interne-->
+		<link rel     ="stylesheet" href="style.css">
+		<!--Titre-->
+		<title>...</title>
+	</head>	
+	
+	<body>
+		<header>
+			<h1>MASTERMIND</h1>
+			<button onclick="reset()" id="reset">Refaire une partie</button>
+		</header>
+			
+		<main>
+			<div class="ligne-reponse">
+				<div class="case reponse"></div>
+				<div class="case reponse"></div>
+				<div class="case reponse"></div>
+				<div class="case reponse"></div>
+			</div>
+			<div class="bloc-tentative">
+				<div class="ligne-tentative8">
+					<div class="ligne-case">
+						<div class="case lt8"></div>
+						<div class="case lt8"></div>
+						<div class="case lt8"></div>
+						<div class="case lt8"></div>
+					</div>
+					<div class="aide">
+						<div id="bc8"></div>
+						<div id="bp8"></div>
+					</div>
+				</div>
+				<div class="ligne-tentative7">
+					<div class="ligne-case">
+						<div class="case lt7"></div>
+						<div class="case lt7"></div>
+						<div class="case lt7"></div>
+						<div class="case lt7"></div>
+					</div>
+					<div class="aide">
+						<div id="bc7"></div>
+						<div id="bp7"></div>
+					</div>
+				</div>
+				<div class="ligne-tentative6">
+					<div class="ligne-case">
+						<div class="case lt6"></div>
+						<div class="case lt6"></div>
+						<div class="case lt6"></div>
+						<div class="case lt6"></div>
+					</div>
+					<div class="aide">
+						<div id="bc6"></div>
+						<div id="bp6"></div>
+					</div>
+				</div>
+				<div class="ligne-tentative5">
+					<div class="ligne-case">
+						<div class="case lt5"></div>
+						<div class="case lt5"></div>
+						<div class="case lt5"></div>
+						<div class="case lt5"></div>
+					</div>
+					<div class="aide">
+						<div id="bc5"></div>
+						<div id="bp5"></div>
+					</div>
+				</div>
+				<div class="ligne-tentative4">
+					<div class="ligne-case">
+						<div class="case lt4"></div>
+						<div class="case lt4"></div>
+						<div class="case lt4"></div>
+						<div class="case lt4"></div>
+					</div>
+					<div class="aide">
+						<div id="bc4"></div>
+						<div id="bp4"></div>
+					</div>
+				</div>
+				<div class="ligne-tentative3">
+					<div class="ligne-case">
+						<div class="case lt3"></div>
+						<div class="case lt3"></div>
+						<div class="case lt3"></div>
+						<div class="case lt3"></div>
+					</div>
+					<div class="aide">
+						<div id="bc3"></div>
+						<div id="bp3"></div>
+					</div>
+				</div>
+				<div class="ligne-tentative2">
+					<div class="ligne-case">
+						<div class="case lt2"></div>
+						<div class="case lt2"></div>
+						<div class="case lt2"></div>
+						<div class="case lt2"></div>
+					</div>
+					<div class="aide">
+						<div id="bc2"></div>
+						<div id="bp2"></div>
+					</div>
+				</div>
+				<div class="ligne-tentative1">
+					<div class="ligne-case">
+						<div class="case lt1"></div>
+						<div class="case lt1"></div>
+						<div class="case lt1"></div>
+						<div class="case lt1"></div>
+					</div>
+					<div class="aide">
+						<div id="bc1"></div>
+						<div id="bp1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="ligne-essai">
+				<div class="case essai"></div>
+				<div class="case essai"></div>
+				<div class="case essai"></div>
+				<div class="case essai"></div>
+			</div>
+			<div class="choix-couleur">
+				<div class="couleur rouge" onclick="selection(1)"></div>
+				<div class="couleur jaune" onclick="selection(2)"></div>
+				<div class="couleur vert" onclick="selection(3)"></div>
+				<div class="couleur bleu" onclick="selection(4)"></div>
+				<div class="couleur orange" onclick="selection(5)"></div>
+				<div class="couleur violet" onclick="selection(6)"></div>
+				<div class="couleur marron" onclick="selection(7)"></div>
+				<div class="couleur blanc" onclick="selection(8)"></div>
+			</div>
+			<div class="bouton">
+				<button onclick="verif()" class="ok">Ok</button>
+				<button onclick="supp()" class="supp">Effacer</button>
+			</div>
+			<div id="fin">
+			</div>
+		</main>
+			
+		<footer>
+			<h2>Règles</h2>
+			<p>Vous devez trouvez la bonne combinaison de couleurs, pour ça vous pouvez choisir 4 couleurs en cliquant sur les carrés coloré.<br>
+			Pour vous aidez à chaque proposition la machine indiquera le nombre de bonne couleur en rouge et le nombre de bonne couleur bien placé en blanc</p>
+		</footer>	
+		<!-- Script -->
+		<script src   ="script.js"></script>
+		<script>init()</script>
+	</body>
+</html>
