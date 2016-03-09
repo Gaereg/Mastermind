@@ -95,7 +95,7 @@ function verif(){//Compare les couleur rentré avec la solution et les affiche s
 		aidePosition.innerHTML = bPosition;
 		tabSelection = [];
 		nbTentative++;
-		if(nbTentative == 2){
+		if(nbTentative == 9){
 			loser();
 		}
 	}
