@@ -137,9 +137,8 @@ main{
 
 #fin{
 	width: 226px;
-	height: 80px;
-	position: absolute;
-	top: 50%;
+	height: 60px;
+	margin-bottom: -40px;
 	visibility: none;
 	display: flex;
 	flex-direction: column;
