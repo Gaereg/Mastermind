@@ -58,15 +58,22 @@ function conversionChiffreCouleur(tabChiffre, caseC){//Convertie les chiffres av
 
 function selection(valeur){//Enregistre les couleurs rentré et les affiche sur la ligne d'essai
 	var i = 0;
+	var j = 0;
 	var test = true;
 	while(test){
-		if(tabEssai[i].getAttribute('class') == 'case essai'){
+		for(p=0; p<4; p++){
+			console.log(valeur!=tabSelection[p])
+			 if(valeur==tabSelection[p]){
+				j++
+			}
+		}
+		if(tabEssai[i].getAttribute('class') == 'case essai' && j==0){
 			tabSelection.push(valeur);
 			conversionChiffreCouleur(tabSelection, tabEssai);
 			test = false
 		} else {
-			i++
-		}
+			i++;
+		} 
 	}
 }
 
